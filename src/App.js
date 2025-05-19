@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Tabs from "./components/Tabs";
+import DocumentQA from "./components/DocumentQA";
+import EmailSummarizer from "./components/EmailSummarizer";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("email");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>AI Document Assistant</h1>
+        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
       </header>
+
+      <main>
+        {activeTab === "email" ? <EmailSummarizer /> : <DocumentQA />}
+      </main>
     </div>
   );
 }
