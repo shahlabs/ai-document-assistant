@@ -20,10 +20,10 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 <div style="flex:1">
-<img src="/assets/images/emailSummarizer.png" width="200">
-<img src="/assets/images/DocumentQA.png" width="200">
+<img src="/assets/images/emailSummarizer.png">
+<img src="/assets/images/DocumentQA.png">
 </div>
 <div style="flex:1">
-<img src="/assets/images/emailSummarizerWithAns.png" width="200">
-<img src="/assets/images/documentWithQA.png" width="200">
+<img src="/assets/images/emailSummarizerWithAns.png">
+<img src="/assets/images/documentWithQA.png">
 </div>
